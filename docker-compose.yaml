@@ -1,4 +1,4 @@
-name: TG File Stream Bot
+name: tg-file-stream-bot
 
 services:
   fsb-run:
@@ -11,5 +11,4 @@ services:
     ports:
       - '${PORT:-8038}:${PORT:-8038}'
     env_file:
-      - path: ./fsb.env
-        required: true
+      - ./fsb.env
